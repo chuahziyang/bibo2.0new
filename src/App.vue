@@ -1,20 +1,20 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld />
+      <LoginPage />
     </v-main>
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import LoginPage from "./components/LoginPage.vue";
 
 export default Vue.extend({
   name: "App",
 
   components: {
-    HelloWorld,
+    LoginPage,
   },
 
   data: () => ({
