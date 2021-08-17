@@ -70,24 +70,7 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn
-                  v-if="!this.showRegister"
-                  @click="login()"
-                  color="primary"
-                  >Login</v-btn
-                >
-                <v-btn
-                  v-if="!this.showRegister"
-                  @click="register()"
-                  color="primary"
-                  >Register</v-btn
-                >
-                <v-btn
-                  v-if="this.showRegister"
-                  @click="registeruser()"
-                  color="primary"
-                  >Submit</v-btn
-                >
+                <v-btn @click="registeruser()" color="primary">Submit</v-btn>
               </v-card-actions>
             </v-card>
           </v-flex>
@@ -111,7 +94,7 @@ export default Vue.extend({
     };
   },
   methods: {
-    send() {
+    login() {
       console.log(this.user + "\n" + this.pass);
     },
     register() {
